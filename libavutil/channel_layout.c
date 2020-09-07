@@ -55,6 +55,11 @@ static const struct channel_name channel_names[] = {
     [15] = { "TBL",       "top back left"         },
     [16] = { "TBC",       "top back center"       },
     [17] = { "TBR",       "top back right"        },
+    [18] = { "TSL",       "top side left"         },
+    [19] = { "TSR",       "top side right"        },
+    [20] = { "BFL",       "bottom front left"     },
+    [21] = { "BFC",       "bottom front center"   },
+    [22] = { "BFR",       "bottom front right"    },
     [29] = { "DL",        "downmix left"          },
     [30] = { "DR",        "downmix right"         },
     [31] = { "WL",        "wide left"             },
@@ -101,8 +106,10 @@ static const struct {
     { "7.1",         8,  AV_CH_LAYOUT_7POINT1 },
     { "7.1(wide)",   8,  AV_CH_LAYOUT_7POINT1_WIDE_BACK },
     { "7.1(wide-side)",   8,  AV_CH_LAYOUT_7POINT1_WIDE },
+    { "7.1(top)",    8,  AV_CH_LAYOUT_7POINT1_TOP },
     { "octagonal",   8,  AV_CH_LAYOUT_OCTAGONAL },
     { "hexadecagonal", 16, AV_CH_LAYOUT_HEXADECAGONAL },
+    { "22.2",       24,  AV_CH_LAYOUT_22POINT2 },
     { "downmix",     2,  AV_CH_LAYOUT_STEREO_DOWNMIX, },
 };
 
